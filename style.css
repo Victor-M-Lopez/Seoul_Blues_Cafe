@@ -7,123 +7,32 @@
   font-family: 'Inknut Antiqua', serif;
 }
 
+:root {
+  --color-blue: #3C4959;
+  --color-yellow: #D9B777;
+}
+
 /* gen */
 a {
   text-decoration: none;
 }
 
 li {
-  list-style: none;
-}
-
-.container {
-  padding: 4rem 0;
-}
-
-.row {
-  padding: 0 24px;
-  max-width: 1200px;
-  margin: 0 auto;
-}
-
-.section--title {
-  border-top: 5px double #D9B777;
-  border-bottom: 5px double #D9B777;
-  text-align: center;
-  margin-bottom: 4rem;
-  width: 100%;
-  max-width: 300px;
-  font-weight: 100;
-}
-
-.blue-background {
-  background-color: #3C4959;
-  transition: all 300ms ease;
-  border-bottom: 1px solid #D9B777;
+  list-style-type: none;
 }
 
 
-
-/* landing */
-#landing_page {
-  position: relative;
-  background-image: url('./assets/seoul_blues--img.jpeg');
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+/* landing page */
+nav {
+  border: 1px solid black;
+  width: 200px;
   height: 100vh;
 }
 
-nav {
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  padding: 24px 0;
-}
-
-.nav--container {
-  padding: 0 24px;
-  display: flex;
-  justify-content: space-between;
-  max-width: 1200px;
-  margin: 0 auto;
+.nav_container {
+  border: 1px solid red;
 }
 
 .nav_logo--img {
-  width: 50px;
+  width: 150px;
 }
-
-.logo--img {
-  position: absolute;
-  width: 400px;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
-
-.nav__list {
-  display: flex;
-  align-items: center;
-}
-
-.nav__link {
-  color: #FFF;
-  margin: 0 24px;
-  font-size: 14px;
-  font-weight: 300;
-}
-
-.landing_page--overlay {
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  height: 100vh;
-  filter: opacity(0.4);
-  background-color: black;
-}
-
-.nav__btn {
-  background-color: #3C4959;
-  border: 1px solid #D9B777;
-  color: #FFF;
-  padding: 4px 16px;
-}
-
-
-
-
-
-
-/* about us */
-.about_us--container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.about_us--container p {
-  margin-bottom: 16px;
-}
-
