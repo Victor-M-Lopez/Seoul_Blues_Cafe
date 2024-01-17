@@ -24,15 +24,32 @@ li {
 
 /* landing page */
 nav {
-  border: 1px solid black;
+  position: fixed;
+  top: 0;
+  bottom: 0;
   width: 200px;
-  height: 100vh;
-}
-
-.nav_container {
-  border: 1px solid red;
+  background-color: var(--color-blue);
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .nav_logo--img {
   width: 150px;
+}
+
+.nav__list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.nav__link {
+  color: var(--color-yellow);
+  font-size: 12px;
+}
+
+.nav__list li,
+.nav__link {
+  margin: 24px 0;
 }
