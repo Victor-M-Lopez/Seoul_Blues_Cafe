@@ -53,6 +53,7 @@ nav {
   display: flex;
   align-items: center;
   justify-content: center;
+  border-right: 1px solid #121517;
   z-index: 100;
 }
 
@@ -134,22 +135,36 @@ nav {
 /* foods */
 
 #foods {
-  background-color: var(--color-grey);
+  background-color: #282A2C;
+}
+
+.info__sub-heading, 
+.info__sub-heading--divider {
+  font-size: 32px;
+  font-weight: 500;
 }
 
 .info__sub-heading {
-  font-size: 32px;
-  font-weight: 500;
   color: var(--color-blue);
+}
+
+.text_divider {
+  width: 50px;
+  background-color: var(--color-yellow);
+  height: 2px;
+  margin: 4px 0 32px 0;
 }
 
 .food__row {
   display: flex;
+  padding: 2rem 24px;
 }
 
 .food__row--2 {
   display: flex;
   flex-direction: row-reverse;
+  background-color: #282A2C;
+  padding: 2rem 24px;
 }
 
 .info__para {
@@ -165,6 +180,7 @@ nav {
   flex-direction: column;
   align-items: center;
   padding: 4rem 24px;
+  background-color: var(--color-grey);
 }
 
 .info__container--dessert {
@@ -188,14 +204,12 @@ nav {
   background-image: url('./assets/dessert_img.png');
 }
 
-/* section_divider */
-.section_divider--row {
-  padding: 4rem 24px;
-}
 
-.section_divider--icons {
-  width: 100px;
-  margin-bottom: 16px;
+
+
+/* section_divider */
+.menu--row {
+  padding: 4rem 24px;
 }
 
 .options--container {
@@ -205,20 +219,57 @@ nav {
   display: flex;
 }
 
-.option--box {
-  width: 25%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+.section__container,
+.section__container--2 {
+  width: 40%;
+  height: 400px;
+  padding: 24px 80px;
 }
 
 .section__container {
+  color: #FFF;
   background-color: #3C4959;
-  width: 100%;
-  height: 500px;
+  margin-bottom: 32px;
+}
+
+.section__container--2 {
+  background-color: var(--color-dark_grey);
 }
 
 
+.info__sub-heading--menu {
+  color: #FFF;
+  text-align: center;
+  font-weight: 100;
+  font-size: 24px;
+  margin-bottom: 40px;
+}
+
+.new_drinks {
+  color: #000;
+}
+
+.coffee_menu--list li {
+  font-weight: 100;
+  margin-bottom: 16px;
+  font-size: 16px;
+}
+
+.menu_sub-heading {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.coffee_menu--container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.menu__container {
+  display: flex;
+  justify-content: center;
+  gap: 32px;
+}
 
 
 
