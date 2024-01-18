@@ -128,3 +128,53 @@ nav {
 .home__welcome-text--3 {
   top: 55%;
 }
+
+
+/* foods */
+
+#foods {
+  background-color: var(--color-grey);
+}
+
+.info__sub-heading {
+  font-size: 32px;
+  font-weight: 500;
+  color: var(--color-blue);
+}
+
+.food__row {
+  display: flex;
+}
+
+.food__row--2 {
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+.info__para {
+  max-width: 500px;
+  font-weight: 300;
+  text-align: center;
+}
+
+.info__container {
+  width: 50%;
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 4rem 24px;
+}
+
+.info__container--dessert {
+  background-color: #DEE0E2;
+}
+
+.food__img--wrapper {
+  width: 50%;
+  height: 500px;
+  background-image: url('./assets/coffee_img.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
