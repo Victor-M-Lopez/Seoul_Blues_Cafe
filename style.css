@@ -5,6 +5,7 @@
   margin: 0;
   box-sizing: border-box;
   font-family: 'Poppins', sans-serif;
+  scroll-behavior: smooth;
 }
 
 :root {
@@ -53,7 +54,6 @@ nav {
   display: flex;
   align-items: center;
   justify-content: center;
-  border-right: 1px solid #121517;
   z-index: 100;
 }
 
@@ -135,10 +135,11 @@ nav {
 /* foods */
 
 #foods {
-  background-color: #282A2C;
+  background-color: var(--color-grey);
 }
 
-.info__sub-heading, 
+.info__sub-heading,
+.info__sub-heading--2, 
 .info__sub-heading--divider {
   font-size: 32px;
   font-weight: 500;
@@ -146,6 +147,11 @@ nav {
 
 .info__sub-heading {
   color: var(--color-blue);
+}
+
+.info__sub-heading--2,
+.info__para--2 {
+  color: #FFF;
 }
 
 .text_divider {
@@ -157,17 +163,18 @@ nav {
 
 .food__row {
   display: flex;
-  padding: 2rem 24px;
+  padding: 2rem 0 4rem 0;
 }
 
 .food__row--2 {
   display: flex;
   flex-direction: row-reverse;
   background-color: #282A2C;
-  padding: 2rem 24px;
+  padding: 2rem 0;
 }
 
-.info__para {
+.info__para,
+.info__para--2 {
   max-width: 500px;
   font-weight: 300;
   text-align: center;
@@ -175,7 +182,7 @@ nav {
 
 .info__container {
   width: 50%;
-  height: 500px;
+  height: 375px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -184,13 +191,13 @@ nav {
 }
 
 .info__container--dessert {
-  background-color: var(--color-dark_grey);
+  background-color: #282A2C;
 }
 
 .food__img--wrapper,
 .food__img--wrapper--2 {
   width: 50%;
-  height: 500px;
+  height: 375px;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -207,7 +214,11 @@ nav {
 
 
 
-/* section_divider */
+/* menu */
+#menu {
+  background-color: var(--color-grey);
+}
+
 .menu--row {
   padding: 4rem 24px;
 }
@@ -273,6 +284,50 @@ nav {
 
 
 
+
+/* connect */
+.connect_img-background {
+  position: relative;
+  height: 300px;
+  background-image: url('./assets/seoul_blues--img.jpeg');
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.img-background--overlay {
+  position: absolute;
+  inset: 0;
+  background-color: var(--color-blue);
+  filter: opacity(0.8);
+}
+
+
+.socials__container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 40%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  z-index: 50;
+}
+
+.connect__sub-heading {
+  color: #FFF;
+  font-weight: 300;
+}
+
+.social_icon {
+  border: 2px solid #FFF;
+  color: #FFF;
+  border-radius: 100%;
+  padding: 6px;
+  font-size: 16px;
+  margin: 0 8px;
+}
 
 
 @media (max-width: 1660px) {
