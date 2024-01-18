@@ -11,6 +11,7 @@
   --color-blue: #3C4959;
   --color-yellow: #D9B777;
   --color-grey: #F5F5F5;
+  --color-dark_grey: #DEE0E2;
 }
 
 /* gen */
@@ -167,14 +168,60 @@ nav {
 }
 
 .info__container--dessert {
-  background-color: #DEE0E2;
+  background-color: var(--color-dark_grey);
 }
 
-.food__img--wrapper {
+.food__img--wrapper,
+.food__img--wrapper--2 {
   width: 50%;
   height: 500px;
-  background-image: url('./assets/coffee_img.png');
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+}
+
+.food__img--wrapper {
+  background-image: url('./assets/coffee_img.png');
+}
+
+.food__img--wrapper--2 {
+  background-image: url('./assets/dessert_img.png');
+}
+
+/* section_divider */
+#section_divider {
+  background-image: linear-gradient(to bottom, var(--color-grey) 10%, var(--color-dark_grey)90%);
+}
+
+.section_divider--row {
+  padding: 4rem 24px;
+}
+
+.section_divider--icons {
+  width: 100px;
+  margin-bottom: 16px;
+}
+
+.options--container {
+  width: 100%;
+  max-width: 80%;
+  margin: 0 auto;
+  display: flex;
+}
+
+.option--box {
+  width: 25%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+
+
+@media (max-width: 1660px) {
+  .home__welcome-text,
+  .home__welcome-text--2,
+  .home__welcome-text--3 {
+    font-size: 150px;
+  }
 }
