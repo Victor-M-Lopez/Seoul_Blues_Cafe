@@ -183,7 +183,7 @@ nav {
 
 .info__container {
   width: 50%;
-  height: 375px;
+  height: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
