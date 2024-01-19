@@ -338,7 +338,7 @@ nav {
   left: 0;
   display: flex;
   justify-content: space-between;
-  padding: 2rem 24px;
+  padding: 1rem 24px;
 }
 
 .hours--container {
