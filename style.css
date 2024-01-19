@@ -13,6 +13,7 @@
   --color-yellow: #D9B777;
   --color-grey: #F5F5F5;
   --color-dark_grey: #DEE0E2;
+  --color-jet-grey: #282A2C;
 }
 
 /* gen */
@@ -219,7 +220,8 @@ nav {
   background-color: var(--color-grey);
 }
 
-.menu--row {
+.menu--row,
+.contact--row {
   padding: 4rem 24px;
 }
 
@@ -288,7 +290,7 @@ nav {
 /* connect */
 .connect_img-background {
   position: relative;
-  height: 300px;
+  height: 500px;
   background-image: url('./assets/seoul_blues--img.jpeg');
   background-position: center;
   background-size: cover;
@@ -305,7 +307,7 @@ nav {
 
 .socials__container {
   position: absolute;
-  top: 50%;
+  top: 30%;
   left: 50%;
   width: 40%;
   transform: translate(-50%, -50%);
@@ -328,6 +330,67 @@ nav {
   font-size: 16px;
   margin: 0 8px;
 }
+
+.contact--row {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  display: flex;
+  justify-content: space-between;
+  padding: 2rem 24px;
+}
+
+.hours--container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.hours--title {
+  color: #FFF;
+  font-weight: 300;
+}
+
+.hours_list {
+  color: #FFF;
+  font-weight: 100;
+}
+
+.phone_address--container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.phone_number,
+.address {
+  color: var(--color-grey);
+  font-weight: 100;
+}
+
+.phone_number {
+  font-size: 24px;
+}
+
+.reserved--container {
+  color: #FFF;
+  font-weight: 100;
+  font-size: 12px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: flex-end;
+  width: 100px;
+}
+
+.reserved {
+  margin-bottom: 8px;
+}
+
+
 
 
 @media (max-width: 1660px) {
