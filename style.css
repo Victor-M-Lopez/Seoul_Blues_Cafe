@@ -225,24 +225,15 @@ nav {
   padding: 4rem 24px;
 }
 
-.options--container {
-  width: 100%;
-  max-width: 80%;
-  margin: 0 auto;
+.menu--container {
   display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 32px;
 }
 
-.section__container,
-.section__container--2 {
-  width: 40%;
-  height: 400px;
-  padding: 24px 80px;
-}
-
-.section__container {
-  color: #FFF;
-  background-color: #3C4959;
-  margin-bottom: 32px;
+.cafe_menu {
+  width: 60%;
 }
 
 .section__container--2 {
@@ -258,31 +249,12 @@ nav {
   margin-bottom: 40px;
 }
 
-.new_drinks {
-  color: #000;
-}
-
-.coffee_menu--list li {
-  font-weight: 100;
-  margin-bottom: 16px;
-  font-size: 16px;
-}
 
 .menu_sub-heading {
   text-align: center;
   margin-bottom: 40px;
 }
 
-.coffee_menu--container {
-  display: flex;
-  justify-content: space-between;
-}
-
-.menu__container {
-  display: flex;
-  justify-content: center;
-  gap: 32px;
-}
 
 
 
