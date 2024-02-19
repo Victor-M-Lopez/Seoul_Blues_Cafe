@@ -220,6 +220,10 @@ nav {
   background-color: var(--color-grey);
 }
 
+.gallery--row {
+  padding: 4rem 0;
+}
+
 .menu--row,
 .contact--row {
   padding: 4rem 24px;
@@ -253,6 +257,40 @@ nav {
 .menu_sub-heading {
   text-align: center;
   margin-bottom: 40px;
+}
+
+
+
+
+/* Banner */
+.images {
+  overflow: hidden;
+  padding: 4px 0;
+  white-space: nowrap;
+}
+
+.images:hover .image-slide {
+  animation-play-state: paused;
+}
+
+.image-slide {
+  display: inline-block;
+  animation: 50s slide infinite linear;
+}
+
+.image-slide img {
+  height: 300px;
+  margin: 0 50px;
+  border-radius: 25px;
+}
+
+@keyframes slide {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translate(-100%);
+  }
 }
 
 
