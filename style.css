@@ -547,6 +547,10 @@ nav {
   .image-slide img {
     height: 180px;
   }
+
+  .cafe_menu {
+    width: 95%;
+  }
   
 }
 
