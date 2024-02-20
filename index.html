@@ -27,6 +27,24 @@
     <button id="nav_btn">
       <img src="./assets/coffee-hamb-menu.svg" alt="" class="menu-btn" onclick="openNav()">
     </button>
+
+    <div class="menu--overlay">
+      <div class="nav_container">
+        <ul class="nav__list">
+          <li><a href="#landing_page" class="nav__link" onclick="closeNav()">HOME</a></li>
+          <li><a href="#foods" class="nav__link" onclick="closeNav()">ABOUT</a></li>
+          
+          <img src="./assets/Seoul_cafe--logo.svg" alt="" class="nav_logo--img nav__link">
+          
+          <li><a href="#menu" class="nav__link" onclick="closeNav()">MENU</a></li>
+          <li><a href="#connect" class="nav__link" onclick="closeNav()">CONNECT</a></li>
+        </ul>
+      </div>
+
+      <button id="x-btn" onclick="closeNav()">
+        <img src="./assets/coffee-x-btn.svg" alt="" class="exit-btn">
+      </button>
+    </div>
   </section>
 
   <section id="home">

@@ -87,9 +87,9 @@ nav {
 
 /* hamb-menu */
 #nav_btn {
-  position: absolute;
+  position: fixed;
   top: 24px;
-  right: 24px;
+  right: 12px;
   background-color: transparent;
   border: none;
   z-index: 100;
@@ -100,10 +100,40 @@ nav {
 }
 
 .menu-btn {
-  width: 50px;
+  width: 40px;
 }
 
+#x-btn {
+  position: absolute;
+  right: 12px;
+  top: 24px;
+  background-color: transparent;
+  border: none;
+  visibility: hidden;
+}
 
+#x-btn:hover {
+  cursor: pointer;
+}
+
+.exit-btn {
+  width: 40px;
+}
+
+.menu--overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: var(--color-blue);
+  z-index: 99;
+  flex-direction: column;
+  justify-content: center;
+  opacity: 0;
+  display: flex;
+  transition: opacity 1000ms ease;
+}
 
 
 /* home */
@@ -167,6 +197,7 @@ nav {
 .info__sub-heading--divider {
   font-size: 32px;
   font-weight: 500;
+  text-align: center;
 }
 
 .info__sub-heading {
@@ -346,7 +377,7 @@ nav {
   position: absolute;
   top: 30%;
   left: 50%;
-  width: 40%;
+  width: 100%;
   transform: translate(-50%,-50%);
   display: flex;
   flex-direction: column;
@@ -403,12 +434,14 @@ nav {
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
+  width: 100%;
 }
 
 .phone_number,
 .address {
   color: var(--color-grey);
   font-weight: 100;
+  text-align: center;
 }
 
 .phone_number {
@@ -490,7 +523,7 @@ nav {
 
 /* 860px view */
 @media (max-width: 860px) {
-  nav {
+  #home_nav {
     display: none;
   }
 
@@ -502,5 +535,28 @@ nav {
   .home__welcome-text--2,
   .home__welcome-text--3 {
     left: 32px;
+  }
+
+  .image-slide img {
+    height: 180px;
+  }
+  
+}
+
+
+/* 630px */
+@media (max-width: 660px) {
+  .home__welcome-text,
+  .home__welcome-text--2,
+  .home__welcome-text--3 {
+    font-size: 50px;
+    text-align: center;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+  }
+
+  .phone_number {
+    margin-bottom: 24px;
   }
 }
