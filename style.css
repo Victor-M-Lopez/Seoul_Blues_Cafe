@@ -93,6 +93,7 @@ nav {
   background-color: transparent;
   border: none;
   z-index: 100;
+  visibility: hidden;
 }
 
 #nav_btn:hover {
@@ -131,9 +132,11 @@ nav {
   flex-direction: column;
   justify-content: center;
   opacity: 0;
-  display: flex;
+  display: none;
   transition: opacity 1000ms ease;
 }
+
+
 
 
 /* home */
@@ -527,6 +530,10 @@ nav {
     display: none;
   }
 
+  #nav_btn {
+    visibility: visible;
+  }
+
   .container {
     margin-left: 0;
   }
@@ -558,5 +565,9 @@ nav {
 
   .phone_number {
     margin-bottom: 24px;
+  }
+
+  .connect_img-background {
+    background-attachment: scroll;
   }
 }
