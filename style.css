@@ -83,6 +83,29 @@ nav {
 }
 
 
+
+
+/* hamb-menu */
+#nav_btn {
+  position: absolute;
+  top: 24px;
+  right: 24px;
+  background-color: transparent;
+  border: none;
+  z-index: 100;
+}
+
+#nav_btn:hover {
+  cursor: pointer;
+}
+
+.menu-btn {
+  width: 50px;
+}
+
+
+
+
 /* home */
 .home--img {
   width: 100%;
@@ -117,7 +140,7 @@ nav {
   font-weight: 900;
   letter-spacing: .1rem;
   color: var(--color-blue);
-  left: 15%;
+  left: 220px;
 }
 
 .home__welcome-text {
@@ -237,7 +260,7 @@ nav {
 }
 
 .cafe_menu {
-  width: 60%;
+  width: 80%;
 }
 
 .section__container--2 {
@@ -263,6 +286,10 @@ nav {
 
 
 /* Banner */
+#gallery-banner {
+  background-color: #F5F5F5;
+}
+
 .images {
   overflow: hidden;
   padding: 4px 0;
@@ -320,7 +347,7 @@ nav {
   top: 30%;
   left: 50%;
   width: 40%;
-  transform: translate(-50%, -50%);
+  transform: translate(-50%,-50%);
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -368,6 +395,10 @@ nav {
 }
 
 .phone_address--container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%);
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -402,11 +433,74 @@ nav {
 
 
 
-
+/* 1660px screen view */
 @media (max-width: 1660px) {
   .home__welcome-text,
   .home__welcome-text--2,
   .home__welcome-text--3 {
     font-size: 150px;
+  }
+}
+
+
+/* 1200px screen view */
+@media (max-width: 1200px) {
+  .home__welcome-text,
+  .home__welcome-text--2,
+  .home__welcome-text--3 {
+    font-size: 90px;
+  }
+
+  .home__welcome-text {
+    top: 15%;
+  }
+
+  .home__welcome-text--2 {
+    top: 40%;
+  }
+
+  .home__welcome-text--3 {
+    top: 65%;
+  }
+
+  .food__row,
+  .food__row--2 {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .info__container {
+    width: 80%;
+  }
+
+  .food__img--wrapper,
+  .food__img--wrapper--2 {
+    width: 100%;
+  }
+
+  .row {
+    padding: 0;
+  }
+
+  .food__row--2 {
+    padding: 0;
+  }
+}
+
+
+/* 860px view */
+@media (max-width: 860px) {
+  nav {
+    display: none;
+  }
+
+  .container {
+    margin-left: 0;
+  }
+
+  .home__welcome-text,
+  .home__welcome-text--2,
+  .home__welcome-text--3 {
+    left: 32px;
   }
 }
