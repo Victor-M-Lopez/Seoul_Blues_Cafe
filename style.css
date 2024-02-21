@@ -509,6 +509,7 @@ nav {
 
   .home_logo {
     display: flex;
+    left: 59%;
   }
   
 }
@@ -522,5 +523,17 @@ nav {
 
   .connect_img-background {
     background-attachment: scroll;
+  }
+}
+
+@media (max-width: 530px) {
+  .home_logo {
+    left: 62%;
+  }
+}
+
+@media (max-width: 400px) {
+  .home_logo {
+    left: 64%;
   }
 }
