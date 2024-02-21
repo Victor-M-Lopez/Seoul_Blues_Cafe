@@ -88,7 +88,7 @@ nav {
 /* hamb-menu */
 #nav_btn {
   position: fixed;
-  top: 24px;
+  top: 15px;
   right: 24px;
   padding: 8px;
   border: none;
@@ -103,7 +103,7 @@ nav {
   left: 0;
   right: 0;
   top: 0;
-  height: 100px;
+  height: 68px;
   background-color: var(--color-blue);
   z-index: 80;
   display: none;
@@ -113,7 +113,7 @@ nav {
 .home_logo {
   position: fixed;
   width: 200px;
-  top: 10px;
+  top: 0px;
   left: 20px;
   display: none;
   z-index: 99;
@@ -275,6 +275,7 @@ nav {
 /* menu */
 #menu {
   background-color: var(--color-grey);
+  padding-top: 100px;
 }
 
 .gallery--row {
@@ -545,11 +546,11 @@ nav {
 @media (max-width: 500px) {
   .home_logo {
     width: 150px;
-    top: 20px;
+    top: 10px;
   }
 
   #nav_btn {
-    top: 30px;
+    top: 20px;
   }
 
   .menu-btn {
