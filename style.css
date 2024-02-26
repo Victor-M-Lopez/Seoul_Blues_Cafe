@@ -262,11 +262,11 @@ nav {
 }
 
 .food__img--wrapper {
-  background-image: url('./assets/coffee_img.png');
+  background-image: url('./assets/coffee_img.webp');
 }
 
 .food__img--wrapper--2 {
-  background-image: url('./assets/dessert_img.png');
+  background-image: url('./assets/dessert_img.webp');
 }
 
 
