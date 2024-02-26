@@ -363,7 +363,7 @@ nav {
 .connect_img-background {
   position: relative;
   height: 500px;
-  background-image: url('./assets/seoul_blues--img.jpeg');
+  background-image: url('./assets/seoul_blues--img.webp');
   background-position: center;
   background-size: cover;
   background-attachment: fixed;
